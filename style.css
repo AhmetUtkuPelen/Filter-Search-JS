@@ -1,0 +1,94 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 25px;
+color:blue;
+}
+body{
+background-color: black;
+}
+.wrapper{
+width: 100%;
+margin: 0 auto;
+}
+#search-container{
+margin: 32px 0;
+text-align: center;
+}
+#search-container input{
+background-color: transparent;
+width: 50%;
+border-bottom: 2px solid gray;
+color: crimson;
+text-align: center;
+padding: 15px 10px;
+border-radius: 15%;
+}
+#search-container input:focus{
+border-bottom-color: chocolate;
+}
+#search-container button{
+padding: 15px;
+border-radius: 25%;
+color: darkblue;
+text-transform: uppercase;
+}
+.button-value{
+border: 3px solid darkblue;
+color: darkblue;
+cursor: pointer;
+padding: 10px 15px;
+border-radius: 20%;
+}
+.active{
+background-color: chocolate;
+color: white;
+}
+#products{
+display: grid;
+grid-template-columns: auto auto;
+grid-column-gap: 15px;
+padding: 24px 0;
+}
+.card{
+max-width: 600px;
+background-color: white;
+margin-top: 15px;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 12px 24px 30px rgba(1, 2, 68, 0.08);
+}
+.image-container{
+text-align: center;
+}
+img{
+max-width: 100%;
+object-fit: contain;
+height: 300px;
+}
+.container{
+padding-top: 15px;
+color: gray;
+}
+.container h5{
+font-weight: 600;
+}
+@media screen and (max-width:900px){
+img{
+max-width: 100%;
+object-fit: contain;
+height: 150px;
+}
+.card{
+max-width: 120px;
+margin-top: 15px;
+}
+#products{
+grid-template-columns: auto auto;
+grid-column-gap: 15px;
+}
+}
+.hide{
+display: none;
+}
